@@ -1,8 +1,9 @@
 package uaslp.objetos.figuras;
 
-public class PoligonoRegular {
+public class PoligonoRegular implements Figura{
     private int numeroDeLados;
     private double lado;
+    private static final String name = "Poligono Regular";
 
     public PoligonoRegular(int numeroDeLados) {
         this.numeroDeLados = numeroDeLados;
@@ -35,5 +36,10 @@ public class PoligonoRegular {
 
     public void setLado(double lado) {
         this.lado = lado;
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }
